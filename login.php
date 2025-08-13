@@ -1,7 +1,7 @@
 <?php 
 session_start();
 require 'conexao.php';
-if($_SERVER["REQEUST_METHOD"]=="POST") {
+if($_SERVER["REQUEST_METHOD"]=="POST") {
     $email=$_POST["email"];
     $senha=$_POST["senha"];
     $sql="SELECT * FROM usuario WHERE email=:email";
