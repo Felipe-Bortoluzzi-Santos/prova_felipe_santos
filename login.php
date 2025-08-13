@@ -46,6 +46,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
         <br>
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha" required>
+        <br>
         <button type="submit">Entrar</button>
     </form>
     <p><a href="recuperar_senha.php">Esqueci a minha senha</a></p>
