@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once('conexao.php');
-if(isset($_SESSION['usuario'])){
+if(!isset($_SESSION['usuario'])){
     header("Location:login.php");
     exit();
 }
