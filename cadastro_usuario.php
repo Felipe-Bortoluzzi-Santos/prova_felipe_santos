@@ -37,6 +37,23 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required>
         <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <br>
+        <label for="id_perfil">Perfil:</label>
+        <select id="id_perfil" name="id_perfil">
+            <option value="1">Admnistrador</option>
+            <option value="2">Secretaria</option>
+            <option value="3">Almoxarife</option>
+            <option value="4">Cliente</option>
+        </select>
+        <br>
+        <button type="submit">Salvar</button>
+        <button type="reset">Cancelar</button>
     </form>
+    <a href="principal.php">Voltar</a>
 </body>
 </html>
