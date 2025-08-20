@@ -8,7 +8,7 @@ if($_SESSION['perfil']!=1 && $_SESSION['perfil']!=2){
 //inicailiza a variavel para evitar erros
 $usuarios=[];
 //se o formulario for enviado, busca o usuario pelo id ou nome
-if($_SERVER["REQUEST_METHOD"]=="POST" && !empty($_POST['bsuca'])){
+if($_SERVER["REQUEST_METHOD"]=="POST" && !empty($_POST['busca'])){
     $busca=trim($_POST['busca']);
     //verifica se a busca é um numero (id) ou um nome
     if(is_numeric($busca)){
