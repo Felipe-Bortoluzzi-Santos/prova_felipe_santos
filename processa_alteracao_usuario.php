@@ -27,6 +27,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
     if($stmt->execute()) {
         echo "<script>alert('Usuario atualizado com sucesso');window.location.href='buscar_usuario.php';</script>";
     } else {
-        echo "<script>alert('Erro ao atualizar o usuario');window.location.href='buscar_usuario.php';</script>";
+        echo "<script>alert('Erro ao atualizar o usuario');window.location.href='alterar_usuario.php?id=$usuario';</script>";
     }
 }
+?>
