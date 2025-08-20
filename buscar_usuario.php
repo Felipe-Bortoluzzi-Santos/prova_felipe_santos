@@ -44,5 +44,28 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
         <br>
         <button type="submit">PESQUISAR</button>
     </form>
+    <?php if(!empty($usuarios)): ?>
+        <table border="1">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Perfil</th>
+                <th>Ações</th>
+            </tr>
+            <?php foreach($usuarios as $usuario) :?>
+                <tr>
+                    <td><?=htmlspecialchars($ususario['id_usuario'])?></td>
+                    <td><?=htmlspecialchars($ususario['nome'])?></td>
+                    <td><?=htmlspecialchars($ususario['email'])?></td>
+                    <td><?=htmlspecialchars($ususario['perfil'])?></td>
+                    <td><a href="alterar_usuario.php?id=<?=htmlspecialchars($ususario['id_usuario'])?>">Alterar</a>
+                    <a href="excluir_usuario.php?id=<?=htmlspecialchars($ususario['id_usuario'])?>" onclick="return confirm('Tem certeza que deseja excluir este usuario')">Excluir</a></td>
+                </tr>
+            <? endforeach ?>
+            </table>
+        <?php else : ?>
+            <p>Nenhum usuario encontrado.</p>
+        <? endif ?>
 </body>
 </html>
