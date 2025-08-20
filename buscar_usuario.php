@@ -67,5 +67,6 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php else : ?>
             <p>Nenhum usuario encontrado.</p>
         <? endif ?>
+        <a href="principal.php">Voltar</a>
 </body>
 </html>
