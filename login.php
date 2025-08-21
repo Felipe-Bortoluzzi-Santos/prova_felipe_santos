@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require 'conexao.php';
+require_once 'conexao.php';
 if($_SERVER["REQUEST_METHOD"]=="POST") {
     $email=$_POST["email"];
     $senha=$_POST["senha"];
