@@ -57,5 +57,6 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
     <? else : ?>
         <p>Nenhum Usuario encontrado</p>
     <? endif ?>
+    <a href="principal.php">Voltar</a>
 </body>
 </html>
