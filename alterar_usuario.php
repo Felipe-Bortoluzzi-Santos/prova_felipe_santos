@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
             <input type="hidden" name="id_usuario" value="<?=htmlspecialchars($usuario['id_usuario'])?>">
             <br>
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" value="<?=htmlspecialchars($usuario['nome'])?>">
+            <input type="text" id="nome" name="nome" value="<?=htmlspecialchars($usuario['nome'])?>" onkeypress="mascara(this,letra)">
             <br>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="<?=htmlspecialchars($usuario['email'])?>">
