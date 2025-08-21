@@ -54,6 +54,8 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
                 </tr>
             <? endforeach ?>
         </table>
+    <? else : ?>
+        <p>Nenhum Usuario encontrado</p>
     <? endif ?>
 </body>
 </html>
