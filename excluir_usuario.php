@@ -26,7 +26,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +36,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
 <body>
     <ul>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Cadastro</a>
+            <a href="javascript:void(0)" class="dropdown-menu">Cadastro</a>
             <div class="dropdown-content">
                 <a href="cadastro_fornecedor.php">Cadastro Fornecedor</a>
                 <a href="cadastro_produto.php">Cadastro Produto</a>
@@ -49,7 +49,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
     </ul>
     <ul>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Excluir</a>
+            <a href="javascript:void(0)" class="dropdown-menu">Excluir</a>
             <div class="dropdown-content">
                 <a href="excluir_fornecedor.php">Excluir Fornecedor</a>
                 <a href="excluir_produto.php">Excluir Produto</a>
@@ -61,7 +61,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
     </ul>
     <ul>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Buscar</a>
+            <a href="javascript:void(0)" class="dropdown-menu">Buscar</a>
             <div class="dropdown-content">
                 <a href="buscar_fornecedor.php">Buscar Fornecedor</a>
                 <a href="buscar_produto.php">Buscar Produto</a>
@@ -74,7 +74,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
     </ul>
     <ul>
         <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Alterar</a>
+            <a href="javascript:void(0)" class="dropdown-menu">Alterar</a>
             <div class="dropdown-content">
                 <a href="alterar_fornecedor.php">Alterar Fornecedor</a>
                 <a href="alterar_produto.php">Alterar Produto</a>
