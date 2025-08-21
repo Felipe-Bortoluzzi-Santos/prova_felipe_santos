@@ -45,7 +45,7 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 <a href="cadastro_usuario.php">Cadastro Usuario</a>
                 <a href="cadastro_perfil.php">Cadastro Perfil</a>
                 <a href="cadastro_cliente.php">Cadastro Cliente</a>
-                <a href="cadastro_produto.php">Cadastro Produto</a>
+                <a href="cadastro_funcionario.php">Cadastro Funcionario</a>
             </div>
         </li>
     </ul>
@@ -56,8 +56,9 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 <a href="excluir_fornecedor.php">Excluir Fornecedor</a>
                 <a href="excluir_produto.php">Excluir Produto</a>
                 <a href="excluir_perfil.php">Excluir Perfil</a>
+                <a href="excluir_usuario.php">Excluir Usuario</a>
                 <a href="excluir_cliente.php">Excluir Cliente</a>
-                <a href="excluir_produto.php">Excluir Produto</a>
+                <a href="excluir_funcionario.php">Excluir Produto</a>
             </div>
         </li>
     </ul>
@@ -67,10 +68,9 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="dropdown-content">
                 <a href="buscar_fornecedor.php">Buscar Fornecedor</a>
                 <a href="buscar_produto.php">Buscar Produto</a>
-                <a href="buscar_usuario.php">Buscar Usuario</a>
                 <a href="buscar_perfil.php">Buscar Perfil</a>
                 <a href="buscar_cliente.php">Buscar Cliente</a>
-                <a href="buscar_produto.php">Buscar Produto</a>
+                <a href="buscar_funcionario.php">Buscar Funcionario</a>
             </div>
         </li>
     </ul>
@@ -83,7 +83,7 @@ $usuarios=$stmt->fetchAll(PDO::FETCH_ASSOC);
                 <a href="alterar_usuario.php">Alterar Usuario</a>
                 <a href="alterar_perfil.php">Alterar Perfil</a>
                 <a href="alterar_cliente.php">Alterar Cliente</a>
-                <a href="alterar_produto.php">Alterar Produto</a>
+                <a href="alterar_funcionario.php">Alterar Funcionario</a>
             </div>
         </li>
     </ul>
