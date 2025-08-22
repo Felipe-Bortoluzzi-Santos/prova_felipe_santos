@@ -22,3 +22,14 @@ function validarFuncionario() {
 
     return true;
 }
+function mascara(o,f){
+    objeto=o
+    funcao=f
+    setTimeout("executaMascara()",1)
+}
+function telefone(variavel){
+    variavel=variavel.replace(/\D/g,"")
+    variavel=variavel.replace(/^(\d\d)(\d)/g,"($1) $2")
+    variavel=variavel.replace(/(\d{4})(\d)/,"$1-$2")
+    return variavel
+}

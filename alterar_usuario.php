@@ -40,6 +40,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <link rel="stylesheet" href="stles.css">
     <!--certifique-se de que o javascript está sendo carregado corretamente-->
     <script src="scripts.js"></script>
+    <script src="validacoes.js"></script>
 </head>
 <body>
     <ul>

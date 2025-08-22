@@ -30,6 +30,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuarios</title>
     <link rel="stylesheet" href="stles.css">
+    <script src="validacoes.js"></script>
 </head>
 <body>
     <ul>
@@ -86,7 +87,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
     <h2>Cadastrar Usuario</h2>
     <form action="cadastro_usuario.php" method="post">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required onkeypress="mascara(this,letra)">
+        <input type="text" id="nome" name="nome" required>
         <br>
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
