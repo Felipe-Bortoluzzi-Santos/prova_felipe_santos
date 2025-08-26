@@ -51,7 +51,7 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
             <a href="javascript:void(0)" class="dropdown-menu">Excluir</a>
             <div class="dropdown-content">
                 <a href="excluir_fornecedor.php">Excluir Fornecedor</a>
-                <a href="excluir_produto.php">Excluir Usuario</a>
+                <a href="excluir_usuario.php">Excluir Usuario</a>
                 <a href="excluir_perfil.php">Excluir Perfil</a>
                 <a href="excluir_cliente.php">Excluir Cliente</a>
             </div>
@@ -94,18 +94,18 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
             </tr>
             <?php foreach($usuarios as $usuario) : ?>
                 <tr>
-                    <td<?=htmlspecialchars($usuario['id_produto']) ?></td>
-                    <td<?=htmlspecialchars($usuario['nome_prod']) ?></td>
-                    <td<?=htmlspecialchars($usuario['descricao']) ?></td>
-                    <td<?=htmlspecialchars($usuario['qtde']) ?></td>
-                    <td<?=htmlspecialchars($usuario['valor_unit']) ?></td>
-                    <td<?=htmlspecialchars($usuario['id_produto']) ?></td>
+                    <td><?=htmlspecialchars($usuario['id_produto']) ?></td>
+                    <td><?=htmlspecialchars($usuario['nome_prod']) ?></td>
+                    <td><?=htmlspecialchars($usuario['descricao']) ?></td>
+                    <td><?=htmlspecialchars($usuario['qtde']) ?></td>
+                    <td><?=htmlspecialchars($usuario['valor_unit']) ?></td>
+                    <td><?=htmlspecialchars($usuario['id_produto']) ?></td>
                     <td><a href="excluir_produto.php?id=<?=htmlspecialchars($usuario['id_produto']) ?>" onclick="return confirm('Tem certeza que deseja excluir este produto?')">Excluir</a></td>
                 </tr>
             <? endforeach ?>
         </table>
     <? else : ?>
-        <p>Nenhum Usuario encontrado</p>
+        <p>Nenhum produto encontrado</p>
     <? endif ?>
     <a href="principal.php">Voltar</a>
 </body>
