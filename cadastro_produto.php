@@ -86,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST") {
         <input type="text" id="nome" name="nome" required>
         <br>
         <label for="descricao">Descrição:</label>
-        <input type="text" id="descricao" name="email" required>
+        <input type="text" id="descricao" name="email" required onkeypress="mascara(this,descricao)">
         <br>
         <label for="qtde">Quantidade:</label>
         <input type="number" id="qtde" name="qtde" required>

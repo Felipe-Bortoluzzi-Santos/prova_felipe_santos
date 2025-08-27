@@ -7,7 +7,7 @@ if($_SESSION['perfil']!=1){
     exit();
 }
 //inicializa as variaveis
-$usuarios=null;
+$usuario=null;
 //se o formulario for enviado, busca o usuario pelo id ou pelo nome
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     if (!empty($_POST['busca_usuario'])){

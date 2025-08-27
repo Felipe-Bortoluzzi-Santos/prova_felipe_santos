@@ -33,6 +33,10 @@ function telefone(variavel){
     variavel=variavel.replace(/(\d{4})(\d)/,"$1-$2")
     return variavel
 }
+function descricao(variavel){
+    variavel=variavel.replace(/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/)
+    return variavel;    
+}
 function letra(variavel){
     variavel=variavel.replace(/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/)
     return variavel;    
