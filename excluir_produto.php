@@ -92,15 +92,15 @@ if(isset($_GET['id']) && is_numeric($_GET['id'])){
                 <th>Valor Unitario:</th>
                 <th>Ações:</th>
             </tr>
-            <?php foreach($usuarios as $usuario) : ?>
+            <?php foreach($produtos as $produto) : ?>
                 <tr>
-                    <td><?=htmlspecialchars($usuario['id_produto']) ?></td>
-                    <td><?=htmlspecialchars($usuario['nome_prod']) ?></td>
-                    <td><?=htmlspecialchars($usuario['descricao']) ?></td>
-                    <td><?=htmlspecialchars($usuario['qtde']) ?></td>
-                    <td><?=htmlspecialchars($usuario['valor_unit']) ?></td>
-                    <td><?=htmlspecialchars($usuario['id_produto']) ?></td>
-                    <td><a href="excluir_produto.php?id=<?=htmlspecialchars($usuario['id_produto']) ?>" onclick="return confirm('Tem certeza que deseja excluir este produto?')">Excluir</a></td>
+                    <td><?=htmlspecialchars($produto['id_produto']) ?></td>
+                    <td><?=htmlspecialchars($produto['nome_prod']) ?></td>
+                    <td><?=htmlspecialchars($produto['descricao']) ?></td>
+                    <td><?=htmlspecialchars($produto['qtde']) ?></td>
+                    <td><?=htmlspecialchars($produto['valor_unit']) ?></td>
+                    <td><?=htmlspecialchars($produto['id_produto']) ?></td>
+                    <td><a href="excluir_produto.php?id=<?=htmlspecialchars($produto['id_produto']) ?>" onclick="return confirm('Tem certeza que deseja excluir este produto?')">Excluir</a></td>
                 </tr>
             <? endforeach ?>
         </table>

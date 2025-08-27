@@ -42,7 +42,7 @@ $opcoes_menu=$permissoes[$id_perfil];
     <script src="scripts.js"></script>
 </head>
 <body>
-<ul>
+    <ul>
         <li class="dropdown">
             <a href="javascript:void(0)" class="dropdown-menu">Cadastro</a>
             <div class="dropdown-content">
